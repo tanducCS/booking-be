@@ -14,12 +14,12 @@ import { Reservation } from './reservations/entities/reservation.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'postgres://booking_05f6_user:p9dsacz2e7Ad3jQ2zMsbwedehNvPsUm7@dpg-cour1p8l6cac73b9djmg-a/booking_05f6',
+      url: 'postgres://booking_05f6_user:p9dsacz2e7Ad3jQ2zMsbwedehNvPsUm7@dpg-cour1p8l6cac73b9djmg-a/booking_05f6',
       port: 5432,
       password: 'p9dsacz2e7Ad3jQ2zMsbwedehNvPsUm7',
       username: 'booking_05f6_user',
       entities: [User, Restaurant,Reservation],
-      database: 'booking',  
+      database: 'booking_05f6',  
       synchronize: true,
       logging: true,
     }),
