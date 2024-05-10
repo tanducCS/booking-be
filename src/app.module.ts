@@ -14,7 +14,7 @@ import { Reservation } from './reservations/entities/reservation.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'postgres://booking_05f6_user:p9dsacz2e7Ad3jQ2zMsbwedehNvPsUm7@dpg-cour1p8l6cac73b9djmg-a/booking_05f6',
       port: 5432,
       password: 'postgres',
       username: 'postgres',
