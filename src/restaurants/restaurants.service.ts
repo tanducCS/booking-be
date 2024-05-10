@@ -12,7 +12,7 @@ export class RestaurantsService {
 
   }
   create(createRestaurantDto: CreateRestaurantDto) {
-    return 'This action adds a new restaurant';
+    return this.restaurantsRepository.save(createRestaurantDto);
   }
 
   findAll(): Promise<Restaurant[]> {
